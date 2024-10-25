@@ -1,0 +1,17 @@
+﻿  win32_plataform.cpp
+C:\graphics_programming\1st_CPP_game\1st Game\renderer.cpp(43,9): warning C4244: 'initializing': conversion from 'float' to 'int', possible loss of data
+  (compiling source file 'win32_plataform.cpp')
+  
+C:\graphics_programming\1st_CPP_game\1st Game\renderer.cpp(44,9): warning C4244: 'initializing': conversion from 'float' to 'int', possible loss of data
+  (compiling source file 'win32_plataform.cpp')
+  
+C:\graphics_programming\1st_CPP_game\1st Game\renderer.cpp(45,9): warning C4244: 'initializing': conversion from 'float' to 'int', possible loss of data
+  (compiling source file 'win32_plataform.cpp')
+  
+C:\graphics_programming\1st_CPP_game\1st Game\renderer.cpp(46,9): warning C4244: 'initializing': conversion from 'float' to 'int', possible loss of data
+  (compiling source file 'win32_plataform.cpp')
+  
+C:\graphics_programming\1st_CPP_game\1st Game\win32_plataform.cpp(53,90): warning C4100: 'nShowCmd': unreferenced formal parameter
+C:\graphics_programming\1st_CPP_game\1st Game\win32_plataform.cpp(53,75): warning C4100: 'lpCmdLine': unreferenced formal parameter
+C:\graphics_programming\1st_CPP_game\1st Game\win32_plataform.cpp(53,54): warning C4100: 'hPrevInstance': unreferenced formal parameter
+  1st Game.vcxproj -> C:\graphics_programming\1st_CPP_game\1st Game\Debug\1st Game.exe
