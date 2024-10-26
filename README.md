@@ -8,4 +8,6 @@ https://www.youtube.com/watch?v=luuyjjOxnUI&list=PL7Ej6SUky135IAAR3PFCFyiVwanauR
 I'm also following this tutorial:
 https://www.learncpp.com/
 
-Did I mention I'm doing this in 1 week?
+I've never written anything in C++ before this challenge.
+
+Did I mention I did this in 1 week?
