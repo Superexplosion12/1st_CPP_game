@@ -51,6 +51,9 @@ LRESULT CALLBACK window_callback(HWND hwnd, UINT uMsg, WPARAM wParam, LPARAM lPa
 }
 
 int __stdcall WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, LPSTR lpCmdLine, int nShowCmd){
+
+	ShowCursor(FALSE);
+
 	//Create Windows Class
 	WNDCLASS window_class = {};
 	window_class.style = CS_HREDRAW | CS_VREDRAW;
@@ -61,7 +64,12 @@ int __stdcall WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, LPSTR lpCmdL
 	RegisterClass(&window_class);
 
 	//Create Window
-	HWND window = CreateWindowW(L"Game Window Class", L"My First Game!", WS_OVERLAPPEDWINDOW | WS_VISIBLE, CW_USEDEFAULT, CW_USEDEFAULT, 1280, 720, 0, 0, hInstance, 0);
+	HWND window = CreateWindowW(L"Game Window Class", L"C++ PONG", WS_OVERLAPPEDWINDOW | WS_VISIBLE, CW_USEDEFAULT, CW_USEDEFAULT, 1280, 720, 0, 0, hInstance, 0);
+	/* {
+		//Fullscreen
+		SetWindowLong(window, GML_STYLE, GetWindowLong(window), GWL_STYLE) & ~WS_OVERLAPPEDWINDOW);
+	}*/
+
 	HDC hdc = GetDC(window);
 
 	Input input = {};
@@ -104,6 +112,9 @@ input.buttons[b].is_down = is_down;\
 						process_button(BUTTON_DOWN, VK_DOWN);
 						process_button(BUTTON_W, 'W');
 						process_button(BUTTON_S, 'S');
+						process_button(BUTTON_LEFT, VK_LEFT);
+						process_button(BUTTON_RIGHT, VK_RIGHT);
+						process_button(BUTTON_ENTER, VK_RETURN);
 					}
 				} break;
 
